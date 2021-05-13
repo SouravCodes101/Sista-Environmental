@@ -55,3 +55,31 @@
         z-index: -1;
     }
 }
+
+.btn-text {
+    padding: .2rem .5rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: $color-primary;
+    border-bottom: 2px solid currentColor;
+    display: inline-block;
+    transition: all .4s;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-1rem) scale(1.1);
+        box-shadow: 0 2rem 4rem rgba($color-black, .4);
+        color: $color-white;
+        background: $color-primary;
+        border: none;
+    }
+
+    &:hover span {
+       position: relative;
+        left:.3rem;
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+}

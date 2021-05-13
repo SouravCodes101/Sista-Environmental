@@ -1,0 +1,50 @@
+.about {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    &__para {
+        padding: 5rem;
+    }
+
+    &__images {
+
+    }
+}
+
+.composition {
+    position: relative;
+    &__photo {
+        width: 55%;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .5);
+        position: absolute;
+        z-index: 10;
+        outline-offset: 1.5rem;
+        transition: all .2s;
+        &--p1 {
+            width: 40%;
+            left: 15rem;
+            top: -2rem;
+        }
+
+        &--p2 {
+            right: 0;
+            top: 2rem;
+        }
+
+        &--p3 {
+            top: 22rem;
+            left: 12rem;
+        }
+
+        &:hover {
+            outline: 1.5rem solid $color-primary;
+            transform: scale(1.1) translateY(-.5rem);
+            z-index: 11;
+        }
+    }
+
+    &:hover &__photo:not(:hover) {
+        transform: scale(.98);
+        filter:blur(1px);
+    }
+}
+
