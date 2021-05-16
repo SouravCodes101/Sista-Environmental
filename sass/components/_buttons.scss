@@ -28,6 +28,21 @@
           }
       }
 
+      &--blue {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
+            transition: all 0.4s;
+          }
+
+          &:hover::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+          }
+      }
+
     &:hover {
         transform: translateY(-1rem);
         box-shadow: 0 1rem 2rem rgba($color-black, .2);
@@ -80,6 +95,6 @@
     }
 
     &:active {
-        transform: translateY(0);
+        transform: translateY(0); 
     }
 }

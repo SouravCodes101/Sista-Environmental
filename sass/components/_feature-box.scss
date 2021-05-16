@@ -25,5 +25,6 @@
 
     &:hover {
         transform: translateY(-3rem) scale(1.1);
+        background-color: rgba($color-grey-light-2, 1);
     }
 }
