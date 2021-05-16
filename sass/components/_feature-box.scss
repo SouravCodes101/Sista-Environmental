@@ -1,0 +1,29 @@
+.feature {
+    padding: 0 11rem;
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(4, 1fr);
+    transform: rotate(7deg) skewX(7deg);
+}
+
+.feature-box {
+    background-color: rgba($color-grey-light-2, .8);
+    max-width: 100%;
+    min-height: 10rem;
+    border-radius: 2px;
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.4);
+    padding: 3rem;
+    transition: all .3s;
+    cursor: pointer;
+
+    &-icon {
+        background: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+        -webkit-background-clip: text;
+        color: transparent;
+        margin: 2rem 0;
+    }
+
+    &:hover {
+        transform: translateY(-3rem) scale(1.1);
+    }
+}

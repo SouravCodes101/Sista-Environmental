@@ -43,8 +43,7 @@
     }
 
     &:hover &__photo:not(:hover) {
-        transform: scale(.98);
-        filter:blur(1px);
+        transform: scale(.96);
     }
 }
 
