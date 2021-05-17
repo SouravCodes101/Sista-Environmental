@@ -16,7 +16,6 @@
     background-position: center;
     transform: skewY(-7deg);
     margin-top: -12rem;
-
 }
 
 .section-tours {
@@ -29,4 +28,11 @@
 .section-testimonials {
   padding: 10rem 0 10rem 0;
   position: relative;
+}
+
+.section-booking {
+  padding: 10rem 0;
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
 }

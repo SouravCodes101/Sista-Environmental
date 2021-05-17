@@ -1,0 +1,14 @@
+.book {
+  margin: 0 auto;
+  width: 65%;
+  height: 65%;
+  background: linear-gradient(
+      105deg,
+      rgba($color-white, 0.85) 0%,
+      rgba($color-white, 0.85) 50%,
+      transparent 50%
+    ),
+    url(../img/sis-10.jpg);
+  background-position: center;
+  background-size: cover;
+}
