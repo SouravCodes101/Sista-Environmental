@@ -1,0 +1,77 @@
+.testimonials{
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+
+    &__shape {
+        height: 15rem;
+        width: 15rem;
+        float: left;
+        margin-right: 2rem;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        overflow: hidden;
+    }
+
+    &__image {
+        width: 100%;
+        transform: scale(1.2);
+        transition: all .3s;
+        position: relative;
+    }
+
+    &__para {
+        color: $color-grey-dark;
+    }
+
+    &__caption {
+        color: $color-white;
+        position: absolute;
+        top: 70%;
+        left: 54%;
+        text-transform: uppercase   ;
+        transform: translate(-50%, 80%);
+        transition: all .3s ease;
+        text-shadow: 0 2rem 4rem rgba($color-black, 1);
+    }
+}
+
+.testimonial {
+
+    & > * {
+        transform: skewX(25deg);
+    }
+    padding: 3rem 2.5rem;
+    background-color: rgba($color-white,.5);
+    transform: skewX(-25deg);
+    cursor: pointer;
+    box-shadow: 0 2rem 6rem rgba($color-black, .3);
+}
+
+.testimonial:hover .testimonials__image {
+    transform: scale(1);
+    filter: blur(1px) brightness(80%);
+}
+
+
+.testimonial:hover .testimonials__caption {
+    transform: translate(-50%, -40%);
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .15;
+    overflow: hidden;
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
